@@ -2,11 +2,11 @@
  # license: Copyright © 2011-2016 MOLPay Sdn Bhd. All Rights Reserved. 
  -->
 
-# molpay-mobile-xdk-ios
+# molpay-mobile-xdk-cocoapods
 
 This is the complete and functional MOLPay iOS payment module that is ready to be implemented into
-Xcode (V7+ recommended) application project as a MOLPayXDK framework. An example application project 
-(MOLPayXDKExample.xcodeproj) is provided for MOLPayXDK framework integration reference.
+Xcode application project through Cocoapods framework. An example Cocoapods application project 
+(Example) is provided for MOLPayXDK framework integration reference.
 
 ## Recommended configurations
 
@@ -16,13 +16,15 @@ Xcode (V7+ recommended) application project as a MOLPayXDK framework. An example
 
 ## Installation
 
-Step 1 - Add #import <MOLPayXDK/MOLPayLib.h>
+Step 1 - Add pod 'MOLPayXDK', '~> _(Current version)_' to the Podfile, then Pod install.
 
-Step 2 - Add <MOLPayLibDelegate> to @interface
+Step 2 - Add #import <MOLPayXDK/MOLPayLib.h>
 
-Step 3 - Add -(void)transactionResult:(NSDictionary *)result for all delegate callbacks
+Step 3 - Add <MOLPayLibDelegate> to @interface
 
-Step 4 - Add `App Transport Security Settings > Allow Arbitrary Loads > YES` to the application project info.plist
+Step 4 - Add -(void)transactionResult:(NSDictionary *)result for all delegate callbacks
+
+Step 5 - Add `App Transport Security Settings > Allow Arbitrary Loads > YES` to the application project info.plist
 
 ## Prepare the Payment detail object
 
