@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'MOLPayXDK_Example', :exclusive => true do
+  pod 'MOLPayXDK', :path => '../'
+end
+
+target 'MOLPayXDK_Tests', :exclusive => true do
+  pod 'MOLPayXDK', :path => '../'
+
+  
+end
