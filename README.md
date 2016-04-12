@@ -103,10 +103,10 @@ _(Notes)_: The transaction request can process without showing the UI
 
 Submit issue to this repository or email to our support@molpay.com
 
-Merchant Technical Support / Customer Care : support@molpay.com
-Sales/Reseller Enquiry : sales@molpay.com
-Marketing Campaign : marketing@molpay.com
-Channel/Partner Enquiry : channel@molpay.com
-Media Contact : media@molpay.com
-R&D and Tech-related Suggestion : technical@molpay.com
-Abuse Reporting : abuse@molpay.com
+Merchant Technical Support / Customer Care : support@molpay.com<br>
+Sales/Reseller Enquiry : sales@molpay.com<br>
+Marketing Campaign : marketing@molpay.com<br>
+Channel/Partner Enquiry : channel@molpay.com<br>
+Media Contact : media@molpay.com<br>
+R&D and Tech-related Suggestion : technical@molpay.com<br>
+Abuse Reporting : abuse@molpay.com<br>
