@@ -22,6 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		EB3C14661CEB06920014CC63 /* custom.css in Resources */ = {isa = PBXBuildFile; fileRef = EB3C14651CEB06920014CC63 /* custom.css */; };
 		ED587073F47E8F7E0462CBA5 /* Pods_MOLPayXDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FDE0D3AABDEB70C7385B2A /* Pods_MOLPayXDK_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		A2FDE0D3AABDEB70C7385B2A /* Pods_MOLPayXDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOLPayXDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D096674748E5D1818984B440 /* Pods_MOLPayXDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOLPayXDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B12F97EC71BCE83B182D5C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EB3C14651CEB06920014CC63 /* custom.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = custom.css; sourceTree = "<group>"; };
 		FCEF6427F04CE39E8DEDDE7F /* Pods-MOLPayXDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOLPayXDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MOLPayXDK_Tests/Pods-MOLPayXDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 		6003F593195388D20070C39A /* Example for MOLPayXDK */ = {
 			isa = PBXGroup;
 			children = (
+				EB3C14651CEB06920014CC63 /* custom.css */,
 				6003F59C195388D20070C39A /* MOLPayXDKAppDelegate.h */,
 				6003F59D195388D20070C39A /* MOLPayXDKAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -276,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB3C14661CEB06920014CC63 /* custom.css in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,

@@ -40,6 +40,8 @@
                                           @"mp_editing_enabled": [NSNumber numberWithBool:NO], // Optional
                                           @"mp_transaction_id": @"", // Optional for transactionRequest
                                           @"mp_request_type": @"" // Optional for transactionRequest, use anything other than "Receipt"
+                                          //@"mp_filter": @"0", // Optional for debit card transactions only
+//                                          @"mp_custom_css_url": [[NSBundle mainBundle] pathForResource:@"custom.css" ofType:nil] // Optional for custom UI
                                           };
     
     mp = [[MOLPayLib alloc] initWithDelegate:self andPaymentDetails:paymentRequestDict];

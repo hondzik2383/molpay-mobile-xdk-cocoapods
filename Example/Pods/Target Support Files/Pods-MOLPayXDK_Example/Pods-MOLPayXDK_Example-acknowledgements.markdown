@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## MOLPayXDK
 
-Copyright (c) 2016 Clement <clement@MOLPays-MacBook-Pro.local>
+Copyright © 2011-2016 MOLPay Sdn Bhd. All Rights Reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
