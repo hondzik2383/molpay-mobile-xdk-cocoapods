@@ -40,6 +40,8 @@
                                           @"mp_editing_enabled": [NSNumber numberWithBool:NO], // Optional
                                           @"mp_transaction_id": @"", // Optional for transactionRequest
                                           @"mp_request_type": @"" // Optional for transactionRequest. Use anything other than "Receipt".
+                                          //@"mp_bin_lock": [NSArray arrayWithObjects:@"414170", @"414171", nil], // Optional for credit card BIN restrictions
+                                          //@"mp_bin_lock_err_msg": @"Only UOB allowed" // Optional for credit card BIN restrictions
                                           //@"mp_is_escrow": @"" // Optional for escrow
                                           //@"mp_filter": @"", // Optional for debit card transactions only
                                           //@"mp_custom_css_url": [[NSBundle mainBundle] pathForResource:@"custom.css" ofType:nil] // Optional for custom UI
