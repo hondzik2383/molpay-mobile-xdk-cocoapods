@@ -16,6 +16,8 @@
 - (id)initWithDelegate:(id<MOLPayLibDelegate>)delegate andPaymentDetails:(NSDictionary *)paymentDetails;
 - (id)initWithDelegate:(id<MOLPayLibDelegate>)delegate andPaymentDetails:(NSDictionary *)paymentDetails andFrame:(CGRect)frame;
 - (void)closemolpay;
-- (void)transactionRequest;
+
+// Deprecated
+// - (void)transactionRequest;
 
 @end

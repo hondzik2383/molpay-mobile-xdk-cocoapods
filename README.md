@@ -60,7 +60,7 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
         
         // For transaction request use only, do not use this on payment process
         @"mp_transaction_id": @"", // Optional, provide a valid cash channel transaction id here will display a payment instruction screen.
-        @"mp_request_type": @"",
+        @"mp_request_type": @"" // Optional, set 'Status' when performing a transactionRequest
     };
 
 ## Start the payment module
@@ -126,13 +126,13 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
 
 ## Transaction request service (Optional, NOT required for payment process)
 
-    Step 1 - Prepare the Payment detail object
+    Step 1 - Prepare the Payment detail object, 
+    set @"mp_request_type": @"Status"
     
-    Step 2 - Start the payment module
+    Step 2 - Start the payment module, 
+    MOLPayLib mp = [[MOLPayLib alloc] initWithDelegate:self andPaymentDetails:paymentRequestDict];
     
-    Step 3 - [mp transactionRequest];
-    
-    * Notes: The transaction request can process without showing the UI
+    * Notes: The transaction request can process without showing the UI.
 
 ## Support
 
