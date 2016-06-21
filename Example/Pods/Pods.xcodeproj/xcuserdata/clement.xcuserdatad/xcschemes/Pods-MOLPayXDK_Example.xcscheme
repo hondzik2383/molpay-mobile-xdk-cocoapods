@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '402ED82210AB110617FA6AB4'
+               BlueprintIdentifier = 'D214F2265803B90BF57F82F7'
                BlueprintName = 'Pods-MOLPayXDK_Example'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_MOLPayXDK_Example.framework'>
