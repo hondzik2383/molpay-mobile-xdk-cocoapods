@@ -124,16 +124,6 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
     
     4) After the user done the paying at the 7-Eleven counter, they can close and exit MOLPay XDK by clicking the “Close” button again.
 
-## Transaction request service (Optional, NOT required for payment process)
-
-    Step 1 - Prepare the Payment detail object, 
-    set @"mp_request_type": @"Status"
-    
-    Step 2 - Start the payment module, 
-    MOLPayLib mp = [[MOLPayLib alloc] initWithDelegate:self andPaymentDetails:paymentRequestDict];
-    
-    * Notes: The transaction request can process without showing the UI.
-
 ## Support
 
 Submit issue to this repository or email to our support@molpay.com
