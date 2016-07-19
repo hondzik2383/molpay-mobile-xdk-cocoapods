@@ -40,6 +40,7 @@
                                           @"mp_editing_enabled": [NSNumber numberWithBool:NO], // Optional
                                           @"mp_transaction_id": @"", // Optional, provide a valid cash channel transaction id here will display a payment instruction screen.
                                           @"mp_request_type": @"" // Optional, set 'Status' when performing a transactionRequest
+                                          //@"mp_preferred_token": @"" // Optional, set the token id to nominate a preferred token as the default selection
                                           //@"mp_bin_lock": [NSArray arrayWithObjects:@"414170", @"414171", nil], // Optional for credit card BIN restrictions
                                           //@"mp_bin_lock_err_msg": @"Only UOB allowed" // Optional for credit card BIN restrictions
                                           //@"mp_is_escrow": @"" // Optional for escrow
