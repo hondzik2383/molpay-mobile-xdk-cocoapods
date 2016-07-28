@@ -64,6 +64,9 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
     
         // Optional, set the token id to nominate a preferred token as the default selection
         @"mp_preferred_token": @"" 
+    
+        // Optional, credit card transaction type, set "AUTH" to authorize the transaction
+        @"mp_tcctype": @""
     };
 
 ## Start the payment module
