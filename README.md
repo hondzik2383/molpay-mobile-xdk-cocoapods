@@ -67,6 +67,9 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
     
         // Optional, credit card transaction type, set "AUTH" to authorize the transaction
         @"mp_tcctype": @""
+    
+        // Optional, set true to process this transaction through the recurring api, please refer the MOLPay Recurring API pdf  
+        @"mp_is_recurring": [NSNumber numberWithBool:NO] 
     };
 
 ## Start the payment module
