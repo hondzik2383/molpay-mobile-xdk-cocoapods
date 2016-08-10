@@ -12,15 +12,28 @@
 @interface MOLPayXDKViewController () <MOLPayLibDelegate>
 {
     MOLPayLib *mp;
+    BOOL isCloseButtonClick;
+    BOOL isPaymentInstructionPresent;
 }
 @end
 
 @implementation MOLPayXDKViewController
 
-- (void)viewDidAppear:(BOOL)animated
+- (IBAction)closemolpay:(id)sender
 {
-    [super viewDidAppear:animated];
+    // Closes MOLPay
+    [mp closemolpay];
     
+    isCloseButtonClick = YES;
+}
+
+- (IBAction)startmolpay:(id)sender
+{
+    // Default setting for Cash channel payment result conditions
+    isPaymentInstructionPresent = NO;
+    isCloseButtonClick = NO;
+    
+    // Setup payment details
     NSDictionary * paymentRequestDict = @{
                                           @"mp_amount": @"", // Mandatory
                                           @"mp_username": @"", // Mandatory
@@ -46,31 +59,54 @@
                                           //@"mp_is_escrow": @"" // Optional for escrow
                                           //@"mp_filter": @"", // Optional for debit card transactions only
                                           //@"mp_custom_css_url": [[NSBundle mainBundle] pathForResource:@"custom.css" ofType:nil], // Optional for custom UI
-                                          //@"mp_is_recurring": [NSNumber numberWithBool:NO] // Optional, set true to process this transaction through the recurring api, please refer the MOLPay Recurring API pdf 
+                                          //@"mp_is_recurring": [NSNumber numberWithBool:NO] // Optional, set true to process this transaction through the recurring api, please refer the MOLPay Recurring API pdf
                                           };
     
     mp = [[MOLPayLib alloc] initWithDelegate:self andPaymentDetails:paymentRequestDict];
-    //    [self presentViewController:mp animated:NO completion:nil];
-    
-    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:mp];
     mp.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Close"
                                                                             style:UIBarButtonItemStylePlain
                                                                            target:self
                                                                            action:@selector(closemolpay:)];
-    [self presentViewController:nc animated:NO completion:nil];
+    mp.navigationItem.hidesBackButton = YES;
     
+    // Push method (This requires host navigation controller to be available at this point of runtime process,
+    // refer AppDelegate.m for sample Navigation Controller implementations)
+    //    [self.navigationController pushViewController:mp animated:YES];
+    
+    // Present method (Simple mode)
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:mp];
+    [self presentViewController:nc animated:NO completion:nil];
 }
 
-- (IBAction)closemolpay:(id)sender
+- (void)viewDidAppear:(BOOL)animated
 {
-    // Closes MOLPay
-    [mp closemolpay];
+    [super viewDidAppear:animated];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Pay now"
+                                                                             style:UIBarButtonItemStylePlain
+                                                                            target:self
+                                                                            action:@selector(startmolpay:)];
 }
 
 // MOLPayLibDelegates
 - (void)transactionResult: (NSDictionary *)result
 {
+    // Payment status results returned here
     NSLog(@"transactionResult result = %@", result);
+    
+    // All success cash channel payments will display a payment instruction, we will let the user to close manually
+    if ([[result objectForKey:@"pInstruction"] integerValue] == 1 && isPaymentInstructionPresent == NO && isCloseButtonClick == NO)
+    {
+        isPaymentInstructionPresent = YES;
+    }
+    else
+    {
+        // Push method
+        //        [self.navigationController popViewControllerAnimated:NO];
+        
+        // Present method
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 @end

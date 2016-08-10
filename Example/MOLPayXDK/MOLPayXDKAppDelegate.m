@@ -7,12 +7,19 @@
 //
 
 #import "MOLPayXDKAppDelegate.h"
+#import "MOLPayXDKViewController.h"
 
 @implementation MOLPayXDKAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // Optional host navigation controller implementations
+    MOLPayXDKViewController *mpvc = [[MOLPayXDKViewController alloc] init];
+    [mpvc.view setBackgroundColor:[UIColor whiteColor]];
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:mpvc];
+    self.window.rootViewController = nc;
+    
     return YES;
 }
 
