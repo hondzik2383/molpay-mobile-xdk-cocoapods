@@ -24,6 +24,8 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
 
     Step 5 - Add 'App Transport Security Settings > Allow Arbitrary Loads > YES' to the application project info.plist
 
+    Step 6 - Add 'NSPhotoLibraryUsageDescription' > 'Payment images' to the application project info.plist
+
 ## Prepare the Payment detail object
 
     NSDictionary * paymentRequestDict = @{
@@ -75,7 +77,10 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
         @"mp_allowed_channels": [NSArray arrayWithObjects:@"credit", @"credit3", nil],
     
         // Optional for sandboxed development environment, set boolean value to enable. 
-        @"mp_sandbox_mode": [NSNumber numberWithBool:YES]
+        @"mp_sandbox_mode": [NSNumber numberWithBool:YES],
+    
+        // Optional, required a valid mp_channel value, this will skip the payment info page and go direct to the payment screen.
+        @"mp_express_mode": [NSNumber numberWithBool:YES]
     };
 
 ## Start the payment module
