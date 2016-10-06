@@ -64,6 +64,9 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
         @"mp_transaction_id": @"", // Optional, provide a valid cash channel transaction id here will display a payment instruction screen.
         @"mp_request_type": @"", // Optional, set 'Status' when performing a transactionRequest
     
+        // Optional, use this to customize the UI theme for the payment info screen, the original XDK custom.css file is provided at Example project source for reference and implementation.
+        @"mp_custom_css_url": [[NSBundle mainBundle] pathForResource:@"custom.css" ofType:nil],
+    
         // Optional, set the token id to nominate a preferred token as the default selection, set "new" to allow new card only
         @"mp_preferred_token": @"", 
     
