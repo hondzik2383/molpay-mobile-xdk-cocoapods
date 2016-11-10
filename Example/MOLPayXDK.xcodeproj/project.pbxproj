@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		144541F5719E5DEC3D6943E0 /* Pods_MOLPayXDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D096674748E5D1818984B440 /* Pods_MOLPayXDK_Tests.framework */; };
+		4CD434A65F88D22D4F3425BB /* Pods_MOLPayXDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE3B5A677F5E901CF7A0CF3 /* Pods_MOLPayXDK_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,7 +23,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		EB3C14661CEB06920014CC63 /* custom.css in Resources */ = {isa = PBXBuildFile; fileRef = EB3C14651CEB06920014CC63 /* custom.css */; };
-		ED587073F47E8F7E0462CBA5 /* Pods_MOLPayXDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FDE0D3AABDEB70C7385B2A /* Pods_MOLPayXDK_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		3684C4D9C1B6C68AF3FEEBDE /* MOLPayXDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MOLPayXDK.podspec; path = ../MOLPayXDK.podspec; sourceTree = "<group>"; };
-		3A757E7C30469C2CA8064843 /* Pods-MOLPayXDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOLPayXDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MOLPayXDK_Example/Pods-MOLPayXDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MOLPayXDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOLPayXDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,14 +57,12 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		91CE9F2E2CA62083D5B02C79 /* Pods-MOLPayXDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOLPayXDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MOLPayXDK_Example/Pods-MOLPayXDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9384B0973858588F0F22657D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		A2CB9AFE8E7E9BACDA5427CD /* Pods-MOLPayXDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOLPayXDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MOLPayXDK_Tests/Pods-MOLPayXDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A2FDE0D3AABDEB70C7385B2A /* Pods_MOLPayXDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOLPayXDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D096674748E5D1818984B440 /* Pods_MOLPayXDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOLPayXDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE3B5A677F5E901CF7A0CF3 /* Pods_MOLPayXDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOLPayXDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B12F97EC71BCE83B182D5C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EB3C14651CEB06920014CC63 /* custom.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = custom.css; sourceTree = "<group>"; };
-		FCEF6427F04CE39E8DEDDE7F /* Pods-MOLPayXDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOLPayXDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MOLPayXDK_Tests/Pods-MOLPayXDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5E2A62AD48F94075D708AA2 /* Pods-MOLPayXDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOLPayXDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MOLPayXDK_Example/Pods-MOLPayXDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F714CEFE8BB8710935C10CBB /* Pods-MOLPayXDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOLPayXDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MOLPayXDK_Example/Pods-MOLPayXDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +73,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				ED587073F47E8F7E0462CBA5 /* Pods_MOLPayXDK_Example.framework in Frameworks */,
+				4CD434A65F88D22D4F3425BB /* Pods_MOLPayXDK_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,24 +84,12 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				144541F5719E5DEC3D6943E0 /* Pods_MOLPayXDK_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		370A77F615FB93239E1C2F39 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3A757E7C30469C2CA8064843 /* Pods-MOLPayXDK_Example.debug.xcconfig */,
-				91CE9F2E2CA62083D5B02C79 /* Pods-MOLPayXDK_Example.release.xcconfig */,
-				FCEF6427F04CE39E8DEDDE7F /* Pods-MOLPayXDK_Tests.debug.xcconfig */,
-				A2CB9AFE8E7E9BACDA5427CD /* Pods-MOLPayXDK_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -114,7 +98,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				370A77F615FB93239E1C2F39 /* Pods */,
+				6F735B53C9B79F7AD08ECBB1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,8 +118,7 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				A2FDE0D3AABDEB70C7385B2A /* Pods_MOLPayXDK_Example.framework */,
-				D096674748E5D1818984B440 /* Pods_MOLPayXDK_Tests.framework */,
+				BEE3B5A677F5E901CF7A0CF3 /* Pods_MOLPayXDK_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,6 +179,15 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		6F735B53C9B79F7AD08ECBB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F714CEFE8BB8710935C10CBB /* Pods-MOLPayXDK_Example.debug.xcconfig */,
+				F5E2A62AD48F94075D708AA2 /* Pods-MOLPayXDK_Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,12 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "MOLPayXDK_Example" */;
 			buildPhases = (
-				DF9194031CFAF23FE16A7494 /* Check Pods Manifest.lock */,
+				529F4C0274B1C6A2D9F5A19F /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				E7DA06BCF8F8AFC3CC3BCA6F /* Embed Pods Frameworks */,
-				A019EF5FA58C55D3E3CAA577 /* Copy Pods Resources */,
+				6BFDFB7FC60EC93552065B56 /* [CP] Embed Pods Frameworks */,
+				B77B0BB53629AE1489007276 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,12 +215,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "MOLPayXDK_Tests" */;
 			buildPhases = (
-				FAA3D36915493ED9B6D32B22 /* Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				E2A4DEC8BC5C003605576B52 /* Embed Pods Frameworks */,
-				334EA1AE8DCB5D33EA233EDF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,74 +286,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		334EA1AE8DCB5D33EA233EDF /* Copy Pods Resources */ = {
+		529F4C0274B1C6A2D9F5A19F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MOLPayXDK_Tests/Pods-MOLPayXDK_Tests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A019EF5FA58C55D3E3CAA577 /* Copy Pods Resources */ = {
+		6BFDFB7FC60EC93552065B56 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MOLPayXDK_Example/Pods-MOLPayXDK_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DF9194031CFAF23FE16A7494 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E2A4DEC8BC5C003605576B52 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MOLPayXDK_Tests/Pods-MOLPayXDK_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E7DA06BCF8F8AFC3CC3BCA6F /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,19 +316,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MOLPayXDK_Example/Pods-MOLPayXDK_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FAA3D36915493ED9B6D32B22 /* Check Pods Manifest.lock */ = {
+		B77B0BB53629AE1489007276 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MOLPayXDK_Example/Pods-MOLPayXDK_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -513,7 +457,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A757E7C30469C2CA8064843 /* Pods-MOLPayXDK_Example.debug.xcconfig */;
+			baseConfigurationReference = F714CEFE8BB8710935C10CBB /* Pods-MOLPayXDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -534,7 +478,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91CE9F2E2CA62083D5B02C79 /* Pods-MOLPayXDK_Example.release.xcconfig */;
+			baseConfigurationReference = F5E2A62AD48F94075D708AA2 /* Pods-MOLPayXDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -555,7 +499,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCEF6427F04CE39E8DEDDE7F /* Pods-MOLPayXDK_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -579,7 +522,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2CB9AFE8E7E9BACDA5427CD /* Pods-MOLPayXDK_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
