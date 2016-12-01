@@ -83,7 +83,13 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
         @"mp_sandbox_mode": [NSNumber numberWithBool:YES],
     
         // Optional, required a valid mp_channel value, this will skip the payment info page and go direct to the payment screen.
-        @"mp_express_mode": [NSNumber numberWithBool:YES]
+        @"mp_express_mode": [NSNumber numberWithBool:YES],
+    
+        // Optional, enable this for extended email format validation based on W3C standards.
+        @"mp_advanced_email_validation_enabled": [NSNumber numberWithBool:YES],
+    
+        // Optional, enable this for extended phone format validation based on Google i18n standards.
+        @"mp_advanced_phone_validation_enabled": [NSNumber numberWithBool:YES]
     };
 
 ## Start the payment module
