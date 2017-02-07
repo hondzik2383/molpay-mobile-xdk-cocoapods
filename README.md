@@ -89,7 +89,19 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
         @"mp_advanced_email_validation_enabled": [NSNumber numberWithBool:YES],
     
         // Optional, enable this for extended phone format validation based on Google i18n standards.
-        @"mp_advanced_phone_validation_enabled": [NSNumber numberWithBool:YES]
+        @"mp_advanced_phone_validation_enabled": [NSNumber numberWithBool:YES],
+    
+        // Optional, explicitly force disable billing name edit.
+        @"mp_bill_name_edit_disabled": [NSNumber numberWithBool:YES],
+    
+        // Optional, explicitly force disable billing email edit.
+        @"mp_bill_email_edit_disabled": [NSNumber numberWithBool:YES],
+    
+        // Optional, explicitly force disable billing mobile edit.
+        @"mp_bill_mobile_edit_disabled": [NSNumber numberWithBool:YES],
+    
+        // Optional, explicitly force disable billing description edit.
+        @"mp_bill_description_edit_disabled": [NSNumber numberWithBool:YES]
     };
 
 ## Start the payment module

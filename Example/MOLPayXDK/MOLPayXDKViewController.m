@@ -63,6 +63,12 @@
                                           //@"mp_allowed_channels": [NSArray arrayWithObjects:@"credit", @"credit3", nil] // Optional for channels restriction
                                           //@"mp_sandbox_mode": [NSNumber numberWithBool:NO] // Optional for sandboxed development environment, set boolean value to enable.
                                           //@"mp_express_mode": [NSNumber numberWithBool:NO] // Optional, required a valid mp_channel value, this will skip the payment info page and go direct to the payment screen.
+                                          //@"mp_advanced_email_validation_enabled": [NSNumber numberWithBool:YES] // Optional, enable this for extended email format validation based on W3C standards.
+                                          //@"mp_advanced_phone_validation_enabled": [NSNumber numberWithBool:YES] // Optional, enable this for extended phone format validation based on Google i18n standards.
+                                          //@"mp_bill_name_edit_disabled": [NSNumber numberWithBool:NO] // Optional, explicitly force disable billing name edit.
+                                          //@"mp_bill_email_edit_disabled": [NSNumber numberWithBool:NO] // Optional, explicitly force disable billing email edit.
+                                          //@"mp_bill_mobile_edit_disabled": [NSNumber numberWithBool:NO] // Optional, explicitly force disable billing mobile edit.
+                                          //@"mp_bill_description_edit_disabled": [NSNumber numberWithBool:NO] // Optional, explicitly force disable billing description edit.
                                           };
     
     mp = [[MOLPayLib alloc] initWithDelegate:self andPaymentDetails:paymentRequestDict];
