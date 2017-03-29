@@ -10,7 +10,7 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
 
     - Xcode version: 8 ++
 
-    - Minimum target version: iOS 7
+    - Minimum target version: iOS 8
 
 ## Installation
 
