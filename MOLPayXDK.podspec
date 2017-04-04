@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "MOLPayXDK"
-  s.version          = "3.10.0"
+  s.version          = "3.11.0"
   s.summary          = "MOLPay Mobile XDK"
   s.description      = "MOLPay mobile payment for iOS (Cocoapods Framework)"
 
