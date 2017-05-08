@@ -104,7 +104,7 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
         @"mp_bill_description_edit_disabled": [NSNumber numberWithBool:YES],
     
         // Optional, EN, MS, VI, TH, FIL, MY, KM, ID, ZH.
-        @"mp_mp_language": @"EN",
+        @"mp_language": @"EN",
     
         // Optional, enable for online sandbox testing.
         @"mp_dev_mode": [NSNumber numberWithBool:NO]
