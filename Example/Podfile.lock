@@ -1,5 +1,5 @@
 PODS:
-  - MOLPayXDK (3.12.0)
+  - MOLPayXDK (3.14.0)
 
 DEPENDENCIES:
   - MOLPayXDK (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MOLPayXDK: fc07c48bf0c3f4679cdf4b83234d62ba37280bcd
+  MOLPayXDK: bbec66adc928d8efcf9af5b18846ba0dfc86c5a6
 
 PODFILE CHECKSUM: a9d3985c70e93b1c423848f0de12f73eff334f8d
 
