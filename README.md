@@ -6,6 +6,8 @@
 
 This is the complete and functional MOLPay iOS payment module that is ready to be implemented into Xcode application project through Cocoapods framework. An example Cocoapods application project (Example) is provided for MOLPayXDK framework integration reference.
 
+这是完整的功能性MOLPay iOS支付模块，可以通过Cocoapods框架实现到Xcode应用程序项目中。为MOLPayXDK框架集成参考提供了一个示例Cocoapods应用程序项目（示例）。
+
 ## Recommended configurations
 
     - Xcode version: 8 ++
@@ -13,6 +15,8 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
     - Minimum target version: iOS 8
 
 ## Installation
+
+### For Objective-C
 
     Step 1 - Add pod 'MOLPayXDK', '~> <put latest release version here>' to the Podfile, then Pod install.
 
@@ -26,7 +30,26 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
 
     Step 6 - Add 'NSPhotoLibraryUsageDescription' > 'Payment images' to the application project info.plist
 
+### For Swift
+    
+    Step 1 - Add pod 'MOLPayXDK', '~> <put latest release version here>' to the Podfile, then Pod install.
+    
+    Step 2 - Create a bridging header file for MOLPay XDK Obj-c framework.
+    Then add the bridging header file to the Swift Compiler under Objective-C Bridging Header. (Refer https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html)
+    
+    Step 3 - Add #import <MOLPayXDK/MOLPayLib.h> to the last line of the bridging header file.
+    
+    Step 4 - Add MOLPayLibDelegate to the view controller class declaration
+    
+    Step 5 - Add func transactionResult(_ result: [AnyHashable: Any]!) for all delegate callbacks
+    
+    Step 6 - Add 'App Transport Security Settings > Allow Arbitrary Loads > YES' to the application project info.plist
+    
+    Step 7 - Add 'NSPhotoLibraryUsageDescription' > 'Payment images' to the application project info.plist
+
 ## Prepare the Payment detail object
+
+### For Objective-C
 
     NSDictionary * paymentRequestDict = @{
         // Mandatory String. A value more than '1.00'
@@ -58,17 +81,17 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
     
         // Optional for credit card BIN restrictions
         @"mp_bin_lock": [NSArray arrayWithObjects:@"414170", @"414171", nil], 
-        @"mp_bin_lock_err_msg": @"Only UOB allowed"
+        @"mp_bin_lock_err_msg": @"Only UOB allowed",
         
         // For transaction request use only, do not use this on payment process
         @"mp_transaction_id": @"", // Optional, provide a valid cash channel transaction id here will display a payment instruction screen.
-        @"mp_request_type": @"", // Optional, set 'Status' when performing a transactionRequest
+        @"mp_request_type": @"",
     
         // Optional, use this to customize the UI theme for the payment info screen, the original XDK custom.css file is provided at Example project source for reference and implementation.
         @"mp_custom_css_url": [[NSBundle mainBundle] pathForResource:@"custom.css" ofType:nil],
     
         // Optional, set the token id to nominate a preferred token as the default selection, set "new" to allow new card only
-        @"mp_preferred_token": @"", 
+        @"mp_preferred_token": @"",
     
         // Optional, credit card transaction type, set "AUTH" to authorize the transaction
         @"mp_tcctype": @"",
@@ -110,23 +133,123 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
         @"mp_dev_mode": [NSNumber numberWithBool:NO]
     };
 
+### For Swift
+
+    let paymentRequestDict: [String:Any] = [
+        // Mandatory String. A value more than '1.00'
+        "mp_amount": "1.10",
+    
+        // Mandatory String. Values obtained from MOLPay
+        "mp_username": "username",
+        "mp_password": "password",
+        "mp_merchant_ID": "merchantid",
+        "mp_app_name": "appname",
+        "mp_verification_key": "vkey123",
+    
+        // Mandatory String. Payment values
+        "mp_order_ID": "orderid123",
+        "mp_currency": "MYR",
+        "mp_country": "MY",
+        
+        // Optional String.
+        "mp_channel": "multi", // Use 'multi' for all available channels option. For individual channel seletion, please refer to "Channel Parameter" in "Channel Lists" in the MOLPay API Spec for Merchant pdf. 
+        "mp_bill_description": "billdesc",
+        "mp_bill_name": "billname",
+        "mp_bill_email": "email@domain.com",
+        "mp_bill_mobile": "+1234567"
+        //"mp_channel_editing": NSNumber.init(booleanLiteral:false), // Option to allow channel selection.
+        //"mp_editing_enabled": NSNumber.init(booleanLiteral:false), // Option to allow billing information editing.
+    
+        // Optional for Escrow
+        //"mp_is_escrow": "0", // Put "1" to enable escrow
+    
+        // Optional for credit card BIN restrictions
+        //"mp_bin_lock": ["414170", "414171"], 
+        //"mp_bin_lock_err_msg": "Only UOB allowed",
+        
+        // For transaction request use only, do not use this on payment process
+        //"mp_transaction_id": "", // Optional, provide a valid cash channel transaction id here will display a payment instruction screen.
+        //"mp_request_type": "",
+    
+        // Optional, use this to customize the UI theme for the payment info screen, the original XDK custom.css file is provided at Example project source for reference and implementation.
+        //"mp_custom_css_url": Bundle.main.path(forResource: "custom.css", ofType: nil)!,
+    
+        // Optional, set the token id to nominate a preferred token as the default selection, set "new" to allow new card only
+        //"mp_preferred_token": "",
+    
+        // Optional, credit card transaction type, set "AUTH" to authorize the transaction
+        //"mp_tcctype": "",
+    
+        // Optional, set true to process this transaction through the recurring api, please refer the MOLPay Recurring API pdf  
+        //"mp_is_recurring": NSNumber.init(booleanLiteral:false),
+    
+        // Optional for channels restriction 
+        //"mp_allowed_channels": ["credit", "credit3"],
+    
+        // Optional for sandboxed development environment, set boolean value to enable. 
+        //"mp_sandbox_mode": NSNumber.init(booleanLiteral:true),
+    
+        // Optional, required a valid mp_channel value, this will skip the payment info page and go direct to the payment screen.
+        //"mp_express_mode": NSNumber.init(booleanLiteral:true),
+    
+        // Optional, enable this for extended email format validation based on W3C standards.
+        //"mp_advanced_email_validation_enabled": NSNumber.init(booleanLiteral:true),
+    
+        // Optional, enable this for extended phone format validation based on Google i18n standards.
+        //"mp_advanced_phone_validation_enabled": NSNumber.init(booleanLiteral:true),
+    
+        // Optional, explicitly force disable billing name edit.
+        //"mp_bill_name_edit_disabled": NSNumber.init(booleanLiteral:true),
+    
+        // Optional, explicitly force disable billing email edit.
+        //"mp_bill_email_edit_disabled": NSNumber.init(booleanLiteral:true),
+    
+        // Optional, explicitly force disable billing mobile edit.
+        //"mp_bill_mobile_edit_disabled": NSNumber.init(booleanLiteral:true),
+    
+        // Optional, explicitly force disable billing description edit.
+        //"mp_bill_description_edit_disabled": NSNumber.init(booleanLiteral:true),
+    
+        // Optional, EN, MS, VI, TH, FIL, MY, KM, ID, ZH.
+        //"mp_language": "EN",
+    
+        // Optional, enable for online sandbox testing.
+        //"mp_dev_mode": NSNumber.init(booleanLiteral:false)
+    ]
+
 ## Start the payment module
 
+### For Objective-C
     MOLPayLib mp = [[MOLPayLib alloc] initWithDelegate:self andPaymentDetails:paymentRequestDict];
+
+### For Swift
+    let mp = MOLPayLib(delegate:self, andPaymentDetails: paymentRequestDict)
 
 ## Show the payment UI
 
+### For Objective-C
     [self presentViewController:mp animated:NO completion:nil];
+
+### For Swift
+    self.present(nc, animated: false) {}
 
 ## Close the payment module
 
+### For Objective-C
     [mp closemolpay];
 
+### For Swift
+    mp.closemolpay()
+    
     * Note: The host application needs to implement the MOLPay payment module manually upon getting a final callback from the close event.
 
 ## Payment module callback
 
+### For Objective-C
     - (void)transactionResult: (NSDictionary *)result
+
+### For Swift
+    func transactionResult(_ result: [AnyHashable: Any]!) {}
     
     =========================================
     Sample transaction result in JSON string:
@@ -189,4 +312,4 @@ Marketing Campaign : marketing@molpay.com<br>
 Channel/Partner Enquiry : channel@molpay.com<br>
 Media Contact : media@molpay.com<br>
 R&D and Tech-related Suggestion : technical@molpay.com<br>
-Abuse Reporting : abuse@molpay.com<br>
+Abuse Reporting : abuse@molpay.com
