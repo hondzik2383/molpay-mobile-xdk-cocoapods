@@ -68,7 +68,7 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
         @"mp_country": @"MY",
         
         // Optional String.
-        @"mp_channel": @"multi", // Use 'multi' for all available channels option. For individual channel seletion, please refer to "Channel Parameter" in "Channel Lists" in the MOLPay API Spec for Merchant pdf. 
+        @"mp_channel": @"multi", // Use 'multi' for all available channels option. For individual channel seletion, please refer to https://github.com/MOLPay/molpay-mobile-xdk-examples/blob/master/channel_list.tsv.
         @"mp_bill_description": @"billdesc",
         @"mp_bill_name": @"billname",
         @"mp_bill_email": @"email@domain.com",
