@@ -35,22 +35,27 @@
     
     // Setup payment details
     NSDictionary * paymentRequestDict = @{
-                                          @"mp_amount": @"", // Mandatory
-                                          @"mp_username": @"", // Mandatory
-                                          @"mp_password": @"", // Mandatory
-                                          @"mp_merchant_ID": @"", // Mandatory
-                                          @"mp_app_name": @"", // Mandatory
-                                          @"mp_order_ID": @"", // Mandatory
-                                          @"mp_currency": @"", // Mandatory
-                                          @"mp_country": @"", // Mandatory
-                                          @"mp_verification_key": @"", // Mandatory
-                                          @"mp_channel": @"", // Optional
-                                          @"mp_bill_description": @"", // Optional
-                                          @"mp_bill_name": @"", // Optional
-                                          @"mp_bill_email": @"", // Optional
-                                          @"mp_bill_mobile": @"", // Optional
+                                          @"mp_amount": @"0.01", // Mandatory
+                                          @"mp_username": @"api_razer", // Mandatory
+                                          @"mp_password": @"api_rr365eR#", // Mandatory
+                                          @"mp_merchant_ID": @"razer_Dev", // Mandatory
+                                          @"mp_app_name": @"razer-pay-ios", // Mandatory
+                                          @"mp_order_ID": @"XDK002", // Mandatory
+                                          @"mp_currency": @"MYR", // Mandatory
+                                          @"mp_country": @"MY", // Mandatory
+                                          @"mp_verification_key": @"337d4d9b4c7a7d3eba0605c7814ee69a", // Mandatory
+                                          @"mp_channel": @"credit7", // Optional
+                                          @"mp_bill_description": @"Hello", // Optional
+                                          @"mp_bill_name": @"Clement", // Optional
+                                          @"mp_bill_email": @"clement@molpay.com", // Optional
+                                          @"mp_bill_mobile": @"0162228207", // Optional
                                           @"mp_channel_editing": [NSNumber numberWithBool:NO], // Optional
-                                          @"mp_editing_enabled": [NSNumber numberWithBool:NO] // Optional
+                                          @"mp_editing_enabled": [NSNumber numberWithBool:NO], // Optional
+                                          @"mp_credit_card_no": @"5426064000424979",
+                                          @"mp_credit_card_cvv": @"979",
+                                          @"mp_credit_card_expiry": @"12/24",
+                                          @"mp_express_mode": [NSNumber numberWithBool:YES]
+                                          
                                           //@"mp_dev_mode": [NSNumber numberWithBool:NO], // Optional, enable for online sandbox testing.
                                           
                                           //@"mp_transaction_id": @"", // Optional, provide a valid cash channel transaction id here will display a payment instruction screen.
