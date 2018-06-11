@@ -136,7 +136,13 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
         @"mp_language": @"EN",
     
         // Optional, enable for online sandbox testing.
-        @"mp_dev_mode": [NSNumber numberWithBool:NO]
+        @"mp_dev_mode": [NSNumber numberWithBool:NO],
+    
+        // Optional, Cash channel payment request expiration duration in hour.
+        @"mp_cash_waittime": @"48",
+        
+        // Optional, allow non-3ds on some credit card channels.
+        @"mp_non_3DS": [NSNumber numberWithBool:YES]
     };
 
 ### For Swift
@@ -220,7 +226,13 @@ This is the complete and functional MOLPay iOS payment module that is ready to b
         //"mp_language": "EN",
     
         // Optional, enable for online sandbox testing.
-        //"mp_dev_mode": NSNumber.init(booleanLiteral:false)
+        //"mp_dev_mode": NSNumber.init(booleanLiteral:false),
+    
+        // Optional, Cash channel payment request expiration duration in hour.
+        //@"mp_cash_waittime": @"48",
+    
+        // Optional, allow non-3ds on some credit card channels.
+        //@"mp_non_3DS": [NSNumber numberWithBool:YES]
     ]
 
 ## Start the payment module

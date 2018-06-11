@@ -50,9 +50,11 @@
                                           @"mp_bill_email": @"", // Optional
                                           @"mp_bill_mobile": @"", // Optional
                                           @"mp_channel_editing": [NSNumber numberWithBool:NO], // Optional
-                                          @"mp_editing_enabled": [NSNumber numberWithBool:NO], // Optional
-                                          @"mp_transaction_id": @"", // Optional, provide a valid cash channel transaction id here will display a payment instruction screen.
-                                          @"mp_request_type": @"" // Optional, set 'Status' when performing a transactionRequest
+                                          @"mp_editing_enabled": [NSNumber numberWithBool:NO] // Optional
+                                          //@"mp_dev_mode": [NSNumber numberWithBool:NO], // Optional, enable for online sandbox testing.
+                                          
+                                          //@"mp_transaction_id": @"", // Optional, provide a valid cash channel transaction id here will display a payment instruction screen.
+                                          //@"mp_request_type": @"" // Optional, set 'Status' when performing a transactionRequest
                                           //@"mp_preferred_token": @"" // Optional, set the token id to nominate a preferred token as the default selection
                                           //@"mp_bin_lock": [NSArray arrayWithObjects:@"414170", @"414171", nil], // Optional for credit card BIN restrictions
                                           //@"mp_bin_lock_err_msg": @"Only UOB allowed" // Optional for credit card BIN restrictions
@@ -69,8 +71,9 @@
                                           //@"mp_bill_email_edit_disabled": [NSNumber numberWithBool:NO] // Optional, explicitly force disable billing email edit.
                                           //@"mp_bill_mobile_edit_disabled": [NSNumber numberWithBool:NO] // Optional, explicitly force disable billing mobile edit.
                                           //@"mp_bill_description_edit_disabled": [NSNumber numberWithBool:NO] // Optional, explicitly force disable billing description edit.
-                                          //@"mp_dev_mode": [NSNumber numberWithBool:NO], // Optional, enable for online sandbox testing.
                                           //@"mp_language": @"EN" // Optional, EN, MS, VI, TH, FIL, MY, KM, ID, ZH.
+                                          //@"mp_cash_waittime": @"48" // Optional, Cash channel payment request expiration duration in hour.
+                                          //@"mp_non_3DS": [NSNumber numberWithBool:YES] // Optional, allow non-3ds on some credit card channels.
                                           };
     
     mp = [[MOLPayLib alloc] initWithDelegate:self andPaymentDetails:paymentRequestDict];
